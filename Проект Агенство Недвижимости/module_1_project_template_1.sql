@@ -26,8 +26,8 @@ filtered_id AS (
         AND ((ceiling_height < (SELECT ceiling_height_limit_h FROM limits)
             AND ceiling_height > (SELECT ceiling_height_limit_l FROM limits)) OR ceiling_height IS NULL)
 ),
--- Продолжите запрос здесь
--- Используйте id объявлений (СТЕ filtered_id), которые не содержат выбросы при анализе данных
+
+-- Используем id объявлений (СТЕ filtered_id), которые не содержат выбросы при анализе данных
 advertisement_activity AS (
     SELECT f.id, a.first_day_exposition, a.last_price, (a.last_price / f.total_area) AS price_meter,
            f.total_area, f.rooms, f.balcony, f.ceiling_height, f.floor, f.is_apartment,
@@ -85,8 +85,8 @@ filtered_id AS (
         AND ((ceiling_height < (SELECT ceiling_height_limit_h FROM limits)
             AND ceiling_height > (SELECT ceiling_height_limit_l FROM limits)) OR ceiling_height IS NULL)
 ),
--- Продолжите запрос здесь
--- Используйте id объявлений (СТЕ filtered_id), которые не содержат выбросы при анализе данных
+
+-- Используем id объявлений (СТЕ filtered_id), которые не содержат выбросы при анализе данных
 seasonality_advertisements AS (
     SELECT f.id, EXTRACT(MONTH FROM a.first_day_exposition) AS first_month_exposition, (a.last_price / f.total_area) AS price_meter, f.total_area,
            CASE
