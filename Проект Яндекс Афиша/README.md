@@ -15,4 +15,4 @@
 - Gодготовлены рекомендации по промо, ценовой политике и удержанию пользователей.
 
 ## Инструменты
-SQL, Yandex DataLens, Python (Pandas, NumPay, ), Jupyter Notebook, U тест Манна Уитни.
+SQL, Yandex DataLens, Python (Pandas, NumPay, matplotlib, seaborn, stats), Jupyter Notebook, U тест Манна Уитни.
